@@ -26,6 +26,7 @@ The only space character in s is ' '.
 */
 
 
+
 #include <iostream>
 
 using namespace std;
