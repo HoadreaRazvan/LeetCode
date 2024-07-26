@@ -36,17 +36,23 @@ Only one valid answer exists.
 
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 
 using namespace std;
 
 class Solution {
 public:
     std::vector<int> twoSum(std::vector<int>& nums, int target) {
-        for (int i = 0; i < nums.size(); ++i)
-            for (int j = i + 1; j < nums.size(); ++j)
-                if (nums[i] + nums[j] == target)
-                    return { i,j };
-        return {};
+        unordered_map <int, int> map;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            int diff = target - nums[i];
+            if (map.find(diff) != map.end())
+                return { map[diff], i };
+            else
+            map[nums[i]] = i;
+        }
+        return {};  
     }
 };
 
