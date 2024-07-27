@@ -42,40 +42,55 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 
 #include <iostream>
-#include <map>
 
 using namespace std;
 
 class Solution {
 public:
     int romanToInt(string s) {
-        int integer = 0;
-        map<char, int> map;
-        map['I'] = 1;
-        map['V'] = 5;
-        map['X'] = 10;
-        map['L'] = 50;
-        map['C'] = 100;
-        map['D'] = 500;
-        map['M'] = 1000;
-
-        for (int i = 0; i < s.length(); i++)
+        int number1, number2=-1, result = 0;
+        for (int i = s.length() - 1; i >= 0; i--)
         {
-            if (i + 1 < s.length() && map[s[i]] < map[s[i + 1]]) {
-                integer += map[s[i + 1]] - map[s[i]];
-                i += 1;
+            switch (s[i])
+            {
+            case 'I':
+                number1 = 1;
+                break;
+            case 'V':
+                number1 = 5;
+                break;
+            case 'X':
+                number1 = 10;
+                break;
+            case 'L':
+                number1 = 50;
+                break;
+            case 'C':
+                number1 = 100;
+                break;
+            case 'D':
+                number1 = 500;
+                break;
+            case 'M':
+                number1 = 1000;
+                break;
             }
+
+ 
+            if (number1 < number2)
+                result -= number1;
             else
-                integer += map[s[i]];
+                result += number1;
+            number2 = number1;
         }
-        return integer;
+        return result;
     }
 };
 
 int main()
 {
     Solution solution;
-    string roman = "LVIII";
+    string roman = "IV";
     int result = solution.romanToInt(roman);
     cout << result;
 }
