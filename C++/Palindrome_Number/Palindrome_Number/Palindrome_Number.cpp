@@ -36,18 +36,14 @@ class Solution {
 public:
     bool isPalindrome(int x) {
         if (x < 0) return false;
-        else
+        long nou = 0;
+        int save = x;
+        while (save)
         {
-            int nou = 0, save = x;
-            while (save)
-            {
-                nou = nou * 10 + save % 10;
-                save /= 10;
-            }
-            if (nou == x)
-                return true;
+            nou = nou * 10 + save % 10;
+            save /= 10;
         }
-        return false;
+        return x == nou;
     }
 };
 
