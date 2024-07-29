@@ -43,18 +43,11 @@ using namespace std;
 class Solution {
 public:
     int lengthOfLastWord(string s) {
-        int ok = 0, k = 0;
-        for (int i = s.length() - 1; i >= 0; i--)
-        {
-            if (s[i] == ' ' && ok == 1)
-                return k;
-            if (s[i] != ' ')
-            {
-                ok = 1;
-                k++;
-            }
-        }
-        return k;
+        int start = s.length()-1, stop;
+        while (start >= 0 && s[start] == ' ') start--;
+        stop = start;
+        while (stop >= 0 && s[stop] != ' ') stop--;
+        return start - stop;
     }
 };
 
