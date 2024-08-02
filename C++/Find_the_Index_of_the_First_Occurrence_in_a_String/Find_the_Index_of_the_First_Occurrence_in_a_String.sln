@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Find_the_Index_of_the_First_Occurrence_in_a_String", "Find_the_Index_of_the_First_Occurrence_in_a_String\Find_the_Index_of_the_First_Occurrence_in_a_String.vcxproj", "{184B943E-6824-4D11-B051-32D281F2A9D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{184B943E-6824-4D11-B051-32D281F2A9D1}.Debug|x64.ActiveCfg = Debug|x64
+		{184B943E-6824-4D11-B051-32D281F2A9D1}.Debug|x64.Build.0 = Debug|x64
+		{184B943E-6824-4D11-B051-32D281F2A9D1}.Debug|x86.ActiveCfg = Debug|Win32
+		{184B943E-6824-4D11-B051-32D281F2A9D1}.Debug|x86.Build.0 = Debug|Win32
+		{184B943E-6824-4D11-B051-32D281F2A9D1}.Release|x64.ActiveCfg = Release|x64
+		{184B943E-6824-4D11-B051-32D281F2A9D1}.Release|x64.Build.0 = Release|x64
+		{184B943E-6824-4D11-B051-32D281F2A9D1}.Release|x86.ActiveCfg = Release|Win32
+		{184B943E-6824-4D11-B051-32D281F2A9D1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4563EB47-A703-44AB-9675-1082040ABED0}
+	EndGlobalSection
+EndGlobal
