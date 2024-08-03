@@ -1,0 +1,3 @@
+﻿  Search_Insert_Position.cpp
+D:\1_PROGRAMMING\LeetCode\C++\Search_Insert_Position\Search_Insert_Position\Search_Insert_Position.cpp(41,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Search_Insert_Position.vcxproj -> D:\1_PROGRAMMING\LeetCode\C++\Search_Insert_Position\x64\Debug\Search_Insert_Position.exe
