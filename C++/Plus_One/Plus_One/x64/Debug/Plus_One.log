@@ -1,0 +1,3 @@
+﻿  Plus_One.cpp
+D:\1_PROGRAMMING\LeetCode\C++\Plus_One\Plus_One\Plus_One.cpp(51,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Plus_One.vcxproj -> D:\1_PROGRAMMING\LeetCode\C++\Plus_One\x64\Debug\Plus_One.exe
