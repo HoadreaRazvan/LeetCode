@@ -37,21 +37,19 @@ struct ListNode {
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        if(head == nullptr)
-			return nullptr;
-        ListNode* current = head;
-        ListNode* result = new ListNode(current->val);
-        ListNode* save = result;
+        ListNode* current = head, * next = head;
+        if(head == nullptr || head->next==nullptr)
+			return head;
+        next = next->next;
         while (current->next != nullptr)
         {
-            if (current->val != current->next->val)
-            {
-                result->next = new ListNode(current->next->val);
-                result = result->next;
-            }
-			current = current->next;
-		}
-        return save;
+            if (current->val == next->val)
+                current->next=next->next;
+            else
+				current = current->next;
+            next = next->next;
+        }
+        return head;
     }
 };
 

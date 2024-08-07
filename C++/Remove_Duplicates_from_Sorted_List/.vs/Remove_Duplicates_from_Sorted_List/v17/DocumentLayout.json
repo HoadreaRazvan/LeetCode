@@ -14,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 492,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,10 +25,6 @@
               "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Remove_Duplicates_from_Sorted_List.cpp",
@@ -36,10 +32,14 @@
               "RelativeDocumentMoniker": "Remove_Duplicates_from_Sorted_List\\Remove_Duplicates_from_Sorted_List.cpp",
               "ToolTip": "D:\\1_PROGRAMMING\\LeetCode\\C\u002B\u002B\\Remove_Duplicates_from_Sorted_List\\Remove_Duplicates_from_Sorted_List\\Remove_Duplicates_from_Sorted_List.cpp",
               "RelativeToolTip": "Remove_Duplicates_from_Sorted_List\\Remove_Duplicates_from_Sorted_List.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAASAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-07T17:10:50.739Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },
