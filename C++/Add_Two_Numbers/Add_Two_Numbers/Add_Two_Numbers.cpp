@@ -47,21 +47,32 @@ struct ListNode {
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        int carry = 0;
+        int carry = 0, sum = 0;
         ListNode* result = new ListNode();
         ListNode* temp = result;
-        while (l1 != nullptr && l2 != nullptr)
+        while (l1 != nullptr || l2 != nullptr)
         {
-            if (l1->next == nullptr && l2->next != nullptr)
-                l1->next = new ListNode();
+            if (l1 == nullptr)
+            {
+                sum = l2->val + carry;
+                l2 = l2->next;
+            }
             else
-                if (l2->next == nullptr && l1->next != nullptr)
-                    l2->next = new ListNode();
-            temp->next = new ListNode((l1->val + l2->val + carry) % 10);
-            carry = (l1->val + l2->val + carry) / 10;
+                if (l2 == nullptr)
+                {
+                    sum = l1->val + carry;
+                    l1 = l1->next;
+                }
+                else
+                {
+                    sum = l1->val + l2->val + carry;
+                    l1 = l1->next;
+                    l2 = l2->next;
+                }
+            temp->next = new ListNode(sum % 10);
+            carry = sum / 10;
             temp = temp->next;
-            l1 = l1->next;
-            l2 = l2->next;
+
         }
         if (carry == 1)
             temp->next = new ListNode(carry);
@@ -77,8 +88,8 @@ int main()
     ListNode* l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
     ListNode* result = s.addTwoNumbers(l1, l2);
     while (result != nullptr)
-	{
-		cout << result->val << " ";
-		result = result->next;
-	}
+    {
+        cout << result->val << " ";
+        result = result->next;
+    }
 }
