@@ -39,49 +39,49 @@ using namespace std;
 
 class Solution {
 public:
-   // int lengthOfLongestSubstring(string s) {
-   //     string str = "";
-   //     int max = 0;
-   //     if(s.length() == 1)
-			//return 1;
-   //     for (int i = 0; i < s.length(); i++)
-   //     {        
-   //         str += s[i];
-   //         for (int j = 0; j < str.length() - 1; j++)
-   //         {
-   //             if (s[i] == str[j])
-   //             {
-   //                 cout<<str<<endl;
-   //                 if (max < (int)str.length() - 1)
-   //                     max = str.length() - 1;
-   //                 i = i- str.length()-2-j;
-   //                 cout<<i<<" "<<j<<endl;
-   //                 break;
-   //             }
-   //         }
-   //         
-   //     }
-   //     if (max < (int)str.length())
-			//max = str.length();
-   //     return max;
-   // }
-
     int lengthOfLongestSubstring(string s) {
-        unordered_set<char> set;
-        int left = 0;
-        int maxLength = 0;
-
-        for (int right = 0; right < s.length(); ++right) {
-            while (set.find(s[right]) != set.end()) {
-                set.erase(s[left]);
-                left++;
+        string str = "";
+        int max = 0;
+        if(s.length() == 1)
+			return 1;
+        for (int i = 0; i < s.length(); i++)
+        {        
+            str += s[i];
+            for (int j = 0; j < str.length() - 1; j++)
+            {
+                if (s[i] == str[j])
+                {
+                    if (max < (int)str.length() - 1)
+                        max = str.length() - 1;
+                    
+                    i = i - str.length() + j+1;
+                    str = "";
+                    break;
+                }
             }
-            set.insert(s[right]);
-            maxLength = max(maxLength, right - left + 1);
+            
         }
-
-        return maxLength;
+        if (max < (int)str.length())
+			max = str.length();
+        return max;
     }
+
+    //int lengthOfLongestSubstring(string s) {
+    //    unordered_set<char> set;
+    //    int left = 0;
+    //    int maxLength = 0;
+
+    //    for (int right = 0; right < s.length(); ++right) {
+    //        while (set.find(s[right]) != set.end()) {
+    //            set.erase(s[left]);
+    //            left++;
+    //        }
+    //        set.insert(s[right]);
+    //        maxLength = max(maxLength, right - left + 1);
+    //    }
+
+    //    return maxLength;
+    //}
 };
 
 
