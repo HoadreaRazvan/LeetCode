@@ -1,0 +1,65 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1_PROGRAMMING\\LeetCode\\C\u002B\u002B\\Integer_to_Roman\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0467D56-059A-4C41-A4DF-843F72A84D25}|Integer_to_Roman\\Integer_to_Roman.vcxproj|D:\\1_PROGRAMMING\\LeetCode\\C\u002B\u002B\\Integer_to_Roman\\Integer_to_Roman\\Integer_to_Roman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F0467D56-059A-4C41-A4DF-843F72A84D25}|Integer_to_Roman\\Integer_to_Roman.vcxproj|solutionrelative:Integer_to_Roman\\Integer_to_Roman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 492,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 239,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Integer_to_Roman.cpp",
+              "DocumentMoniker": "D:\\1_PROGRAMMING\\LeetCode\\C\u002B\u002B\\Integer_to_Roman\\Integer_to_Roman\\Integer_to_Roman.cpp",
+              "RelativeDocumentMoniker": "Integer_to_Roman\\Integer_to_Roman.cpp",
+              "ToolTip": "D:\\1_PROGRAMMING\\LeetCode\\C\u002B\u002B\\Integer_to_Roman\\Integer_to_Roman\\Integer_to_Roman.cpp",
+              "RelativeToolTip": "Integer_to_Roman\\Integer_to_Roman.cpp",
+              "ViewState": "AQIAADkAAAAAAAAAAAAiwEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-14T20:00:42.52Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 69,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
