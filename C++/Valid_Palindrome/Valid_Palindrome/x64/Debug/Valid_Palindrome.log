@@ -1,0 +1,3 @@
+﻿  Valid_Palindrome.cpp
+D:\1_PROGRAMMING\LeetCode\C++\Valid_Palindrome\Valid_Palindrome\Valid_Palindrome.cpp(47,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Valid_Palindrome.vcxproj -> D:\1_PROGRAMMING\LeetCode\C++\Valid_Palindrome\x64\Debug\Valid_Palindrome.exe
